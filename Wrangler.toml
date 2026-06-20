@@ -1,11 +1,7 @@
 name = "bybitbot"
 main = "worker.js"
-compatibility_date = "2026-06-19"
-compatibility_flags = ["nodejs_compat"]
+compatibility_date = "2024-01-01"
 
-[[kv_namespaces]]
-binding = "PREDICTIONS"
-id = "0700d89ace064054baa748de9e6827da"
-
-[triggers]
-crons = ["0 7 *"] # 7:00 UTC = 9:00 AM Lagos time daily
+kv_namespaces = [
+  { binding = "PREDICTIONS", id = "0700d89ace064054baa748de9e6827da" }
+]
